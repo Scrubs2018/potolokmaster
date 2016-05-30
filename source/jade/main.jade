@@ -1,0 +1,614 @@
+include helpers/bemto
+include helpers/variables
+include helpers/mixins
+
+-bemto_settings_prefix = 'b-'
+
+doctype html
+html
+	head
+		title main
+		include inc/head
+	body(class="p-main")
+		include partials/header
+
+		+b('').top-main
+			.b-container
+				+e('').wrap
+					+e('').top
+						+e('').left
+							+e('span').title Профессиональная установка натяжных потолков за 3 часа
+							+e('').title-wrap
+								+b('span').title Лучшая цена в Москве и Московской области
+							+e('').cols-wrap
+								+e('span').col._procent Найдете дешевле - вернем 110% разницы
+								+e('span').col._procent-a Скидки от<br>объема до 40%
+						+e('').right
+							+b('').application
+								+e('').title-wrap
+									+b('span').title Выезд замерщика<br><span>БЕСПЛАТНО</span> в течении<br>2х часов после обращения
+								+e('').text
+									p Введите Ваши данные, мы Вам перезвоним:
+								+e('').item
+									+b('').name
+										+e('input')(type="text" placeholder="Ваше имя").input
+										+e('input')(type="submit" value="").submit
+								+e('').item
+									+b('').name
+										+e('input')(type="text" placeholder="Ваш телефон").input
+										+e('input')(type="submit" value="").submit-a
+								+e('').btn-wrap
+									+b('a')(href="#").btn._fix Оставить заявку
+					+e('').bottom
+						+b('').about
+							+e('').col
+								+e('span').top._one 8
+								+e('span').bottom лет на рынке
+							+e('').col
+								+e('span').top._two 10
+								+e('span').bottom лет опыт монтажников
+							+e('').col
+								+e('span').top._three 15
+								+e('span').bottom лет гарантии по договору
+							+e('').col
+								+e('span').top._four 3
+								+e('span').bottom часа монтаж потолка
+							+e('').col
+								+e('span').top._five 24
+								+e('span').bottom часа от замера до монтажа
+		+b('section').present
+			.b-container
+				+e('').present-wrap
+					+e('').left
+						+e('img')(src="http://placehold.it/220x220").img
+					+e('').right
+						+e('img')(src="img/gift.png").img-a
+						+e('').layout
+							+e('span').title Маскировочная лента в подарок!
+							+e('').wrap
+								+e('').timer
+									+e('img')(src="img/clock.png").img-b
+									+e('').layout-a
+								+e('').btn-wrap
+									+b('a')(href="#" data-id="#link").btn.im-popup-link Получить подарок
+		+b('section').decision
+			.b-container
+				+e('').title-wrap
+					div(class="test")
+						<span class="left"></span>
+						h2 Выберите готовое решение<br>для своего бюджета
+						<span class="right"></span>
+				+e('').cols-wrap
+					+e('').col
+						+made-solution
+					+e('').col
+						+made-solution
+					+e('').col
+						+made-solution
+					+e('').col
+						+made-solution
+					+e('').col
+						+made-solution
+					+e('').col
+						+made-solution
+				+e('').wrap
+					+e('').left
+						+b('span').text Данные цены действительны при разовом заказе от 60 м2
+					+e('').right
+						+b('span').text В цену входит: материал ПВХ, алюминиевый профиль, обработка 4х углов, установка потолка гарпунным методом. Минимальная сумма заказа 7500 руб.
+				+b('').calc
+					+e('').title-wrap
+						+b('span').title-middle Закажите индивидуальный <span>расчет стоимости</span>
+					+e('').cols-wrap
+						+e('').col
+							+e('').key Материал:
+							+e('').item
+								+b('select').select Ткань
+									+e('option').option Тип окон
+									+e('option').option Закрытый
+									+e('option').option Открытый
+							+e('').item
+								+b('select').select Ткань
+									+e('option').option Тип окон
+									+e('option').option Закрытый
+									+e('option').option Открытый
+						+e('').col
+							+e('').key Помещение:
+							+e('').item
+								+b('input')(type="text" placeholder="Площадь").input
+							+e('').item
+								+b('input')(type="text" placeholder="Кол-во углов").input
+						+e('').col
+							+e('').key Освещение:
+							+e('').item
+								+b('input')(type="text" placeholder="Светильники").input
+							+e('').item
+								+b('input')(type="text" placeholder="Люстры").input
+						+e('').col
+							+e('').key Контакты:
+							+e('').item
+								+b('').name
+									+e('input')(type="text" placeholder="Ваше имя").input._small
+									+e('input')(type="submit" value="").submit
+							+e('').item
+								+b('').name
+									+e('input')(type="text" placeholder="Ваш телефон").input._small
+									+e('input')(type="submit" value="").submit-a
+					+e('').btn-wrap
+						+b('a')(href="#").btn._fix Рассчитать
+				+e('').title-wrap-w
+					div(class="test")
+						<span class="left"></span>
+						h2 Виды натяжных потолков
+						<span class="right"></span>
+				+b('').texture
+					+e('').top
+						+e('').title-wrap
+							+b('span').title-middle ПВХ потолки
+						+e('').text-a
+							p Бывают трех фактур:
+					+e('').wrap
+						+e('').left
+							+e('').cols-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/84x84").img
+									+e('span').title Матовая
+									+e('span').text (похожа на классическую побелку)
+								+e('').col
+									+e('img')(src="http://placehold.it/84x84").img
+									+e('span').title Матовая
+									+e('span').text (похожа на классическую побелку)
+								+e('').col
+									+e('img')(src="http://placehold.it/84x84").img
+									+e('span').title Матовая
+									+e('span').text (похожа на классическую побелку)
+						+e('').right
+							+b('').discount
+								+e('').row
+									+e('span').title При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+								+e('').row
+									+e('span').title При заказе от 20 м<sup>2</sup> до 40 м<sup>2</sup> - <span>скидка 15%</span>
+								+e('').row
+									+e('span').title При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+								+e('').row
+									+e('span').title При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+					+e('').many-text
+						p Также ПВХ потолки бывают уже с изображением облаков, иллюзия воды, под замшу, под венициамскую штукатурку, полупрозрачные. У потолков из ПВХ самая богатая поллитра цветов. Фотопечать на ПВХ полотнах получается четкая, насыщенная. Возможность реализации практически всех дизайнерских решений. Можно делать многоуровневые потолки, со светодиодной лентой, скомбинировать различные цвета.
+					+b('').description
+						+e('').col._kinds1 Можно устанавливать во влажные помещения
+						+e('').col._kinds4 Удерживают воду <br><span>(до 100 л на м<sup>2</sup>)</span>
+						+e('').col._kinds2 Не желтеют и не меняют цвет со временем
+						+e('').col._kinds5 Ремонтопригодны, легко моются
+						+e('').col._kinds3 Гарантия по договору 12 лет
+						+e('').col._kinds6 Срок эксплуатации 50 лет
+		+b('section').ceiling
+			.b-container
+				+e('').wrap
+					+e('').title-wrap
+						+b('span').title-middle Потолки на тканевой основе
+					+e('').text
+						p Только матовая фактура. Бывают различных цветов и оттенков, возможно нанесение фотопечати. Монтаж происходит без нагрева помещения. Идеальное решение для спален и детских комнат.
+					+e('').cols-wrap
+						+e('').col
+							+e('img')(src="http://placehold.it/100x100").img
+						+e('').col
+							+e('img')(src="http://placehold.it/100x100").img
+						+e('').col
+							+e('img')(src="http://placehold.it/100x100").img
+					+b('').description._small
+						+e('').col._kind1 Устанавливаются только в сухих помещениях
+						+e('').col._kind4 Не бликуют
+						+e('').col._kind2 Не боятся температурных перепадов
+						+e('').col._kind5 Имеют шумоизоляци- онные свойства
+						+e('').col._kind3 Можно устанавливать в неотапливаемые помещения
+						+e('').col._kind6 Не пахнут
+				+b('').carusel
+					+e('').title-wrap
+						+b('span').title-middle Образцы светильников
+					+e('').text для натяжных потолков со светодиодными лампами от 300 руб.
+					+b('').slider
+						+e('').slide
+							+e('img')(src="http://placehold.it/160x160").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/160x160").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/160x160").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/160x160").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/160x160").img
+						+e('').slide
+							+e('img')(src="http://placehold.it/160x160").img
+				+b('').timer
+					+e('').left
+						+e('').top
+							+e('span').title Скидки от объема +
+							+e('span').text маскировочная лента в подарок
+						+e('').middle
+							+e('').left-a
+							+e('').right-a
+								+b('').discount
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> до 40 м<sup>2</sup> - <span>скидка 15%</span>
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+						+e('').bottom
+							+e('img')(src="img/clock.png").img
+					+e('').right
+						+b('').application
+							+e('').title-wrap
+								+b('span').title Выезд замерщика<br><span>БЕСПЛАТНО</span> в течении<br>2х часов после обращения
+							+e('').text
+								p Введите Ваши данные, мы Вам перезвоним:
+							+e('').item
+								+b('').name
+									+e('input')(type="text" placeholder="Ваше имя").input
+									+e('input')(type="submit" value="").submit
+							+e('').item
+								+b('').name
+									+e('input')(type="text" placeholder="Ваш телефон").input
+									+e('input')(type="submit" value="").submit-a
+							+e('').btn-wrap
+								+b('a')(href="#").btn._fix Оставить заявку
+		+b('section').work
+			.b-container
+				+e('').title-wrap-a
+					div(class="test")
+						<span class="left"></span>
+						h2 Выполненные проекты
+						<span class="right"></span>
+				+e('').row-wrap
+					+e('').row
+						+b('').exemple
+							+e('').left
+								+e('').row
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+								+e('').row
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+							+e('').right
+								+e('span').title Установка комбинированного потолка
+								+e('').text Помещение:
+								+e('').office
+									p офисное помещение
+								+e('').text Задачи:
+								ul
+									li Разработать дизайн-проект под размеры помещения
+									li Подобрать все материалы, цвета и рисунки
+									li Разметить и сделать монтаж необходимой конструкции
+									li Произвести монтаж потолка и освещения
+								+b('a')(href="#").btn Хочу так же
+					+e('').row
+						+b('').exemple
+							+e('').left
+								+e('').row
+									+e('img')(src="http://placehold.it/520x195").img
+								+e('').row
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+							+e('').right
+								+e('span').title Установка комбинированного потолка
+								+e('').text Помещение:
+								p офисное помещение
+								+e('').text Задачи:
+								ul
+									li Разработать дизайн-проект под размеры помещения
+									li Подобрать все материалы, цвета и рисунки
+									li Разметить и сделать монтаж необходимой конструкции
+									li Произвести монтаж потолка и освещения
+								+e('').btn-wrap
+									+b('a')(href="#").btn Хочу так же
+					+e('').row
+						+b('').exemple
+							+e('').left
+								+e('').row
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+									+e('').col
+										+e('img')(src="http://placehold.it/255x195").img
+								+e('').row
+									+e('img')(src="http://placehold.it/520x195").img
+							+e('').right
+								+e('span').title Установка комбинированного потолка
+								+e('').text Помещение:
+								p офисное помещение
+								+e('').text Задачи:
+								ul
+									li Разработать дизайн-проект под размеры помещения
+									li Подобрать все материалы, цвета и рисунки
+									li Разметить и сделать монтаж необходимой конструкции
+									li Произвести монтаж потолка и освещения
+								+e('').btn-wrap
+									+b('a')(href="#").btn Хочу так же
+				+e('').title-wrap
+					div(class="test")
+							<span class="left"></span>
+							h2 Фото до и после
+							<span class="right"></span>
+				+b('').foto
+					+e('').row._border
+						+e('').left
+							+e('').cols-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title До
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title После
+						+e('').right
+							+e('').cols-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title До
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title После
+					+e('').row._border
+						+e('').left
+							+e('').cols-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title До
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title После
+						+e('').right
+							+e('').cols-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title До
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title После
+					+e('').row
+						+e('').left
+							+e('').cols-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title До
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title После
+						+e('').right
+							+e('').cols-wrap
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title До
+								+e('').col
+									+e('img')(src="http://placehold.it/220x235").img
+									+e('span').title После
+					+e('').btn-wrap
+						+b('a')(href="#").btn Посмотреть еще фото
+		+b('section').join-us
+			.b-container
+				+e('').title-wrap
+					div(class="test")
+						<span class="left"></span>
+						h2(class="white") Почему клиенты выбирают нас
+						<span class="right"></span>
+				+e('').cols-wrap
+					+e('').col
+						+e('').wrap
+							+e('').left._join1
+							+e('').right
+								+e('span').title Бесплатный замер и консультация
+								+e('span').text
+									p Выезд в день обращения в удобное для заказчика время, производим расчет сразу на месте.
+					+e('').col
+						+e('').wrap
+							+e('').left._join2
+							+e('').right
+								+e('span').title Работаем официально
+								+e('span').text
+									p Расчет и заключение договора на объекте. Оплата согласно договора, заказчик оплачивает работы согласно сметы, никаких непредвиденных доплат.
+					+e('').col
+						+e('').wrap
+							+e('').left._join3
+							+e('').right
+								+e('span').title Квалифицированные монтажники
+								+e('span').text
+									p Граждане РФ, прошедшие обучения и имеют опыт работы более 10 лет.
+					+e('').col
+						+e('').wrap
+							+e('').left._join4
+							+e('').right
+								+e('span').title Чистота и порядок
+								+e('span').text
+									p Используем перфораторы с пылесосом и безопасные (компазитные) газовые баллоны, убираем за собой мусор.
+				+b('').company
+					+e('span').title Используем в работе только качественные материалы и комплектующие
+					+e('').cols-wrap
+						+e('').col._company1
+						+e('').col._company2
+						+e('').col._company3
+						+e('').col._company4
+						+e('').col._company5
+						+e('').col._company6
+						+e('').col._company7
+						+e('').col._company8
+						+e('').col._company9
+				+b('').timer
+					+e('').left
+						+e('').top
+							+e('span').title Скидки от объема +
+							+e('span').text маскировочная лента в подарок
+						+e('').middle
+							+e('').left-a
+							+e('').right-a
+								+b('').discount
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> до 40 м<sup>2</sup> - <span>скидка 15%</span>
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+									+e('').row
+										+e('span').title._white При заказе от 20 м<sup>2</sup> - <span>скидка 15%</span>
+						+e('').bottom
+							+e('img')(src="img/clock.png").img
+					+e('').right
+						+b('').application
+							+e('').title-wrap
+								+b('span').title Выезд замерщика<br><span>БЕСПЛАТНО</span> в течении<br>2х часов после обращения
+							+e('').text
+								p Введите Ваши данные, мы Вам перезвоним:
+							+e('').item
+								+b('').name
+									+e('input')(type="text" placeholder="Ваше имя").input
+									+e('input')(type="submit" value="").submit
+							+e('').item
+								+b('').name
+									+e('input')(type="text" placeholder="Ваш телефон").input
+									+e('input')(type="submit" value="").submit-a
+							+e('').btn-wrap
+								+b('a')(href="#").btn._fix Оставить заявку
+		+b('section').reviews
+			.b-container
+				+e('').title-wrap
+					div(class="test")
+						<span class="left"></span>
+						h2 Отзывы клиентов
+						<span class="right"></span>
+				+e('').row-wrap
+					+e('').row
+						+e('').col
+							+e('').wrap
+								+e('').left
+									+e('img')(src="http://placehold.it/150x150").img
+								+e('').right
+									+e('').about-wrap
+										+e('span').about «У нас был ограничен бюджет...»
+									+e('span').name Юлия, Москва
+							+e('').text
+								p У нас был ограничен бюджет, поэтому выбирали очень долго. Вызвали несколько замерщиков, устроили так сказать тендер. В вашей компании оказалась самая хорошая цена, поэтому и остановили выбор на вас. Ни грама не пожалели. Всем рекомендую. Отдельно хочу поблагодарить бригаду монтажников. Все сделали аккуратно и быстро. У нас работали Дмитрий и Алексей.
+						+e('').col
+							+e('').wrap
+								+e('').left
+									+e('img')(src="http://placehold.it/150x150").img
+								+e('').right
+									+e('').about-wrap
+										+e('span').about «У нас был ограничен бюджет...»
+									+e('span').name Юлия, Москва
+							+e('').text
+								p Поджимали сроки, срочно были нужны потолки, т.к. должны были устанавливать кухню. Наткнулся в интернете на ваш сайт, все понравилось,  решил позвонить записаться на замер, объяснил, что срочно надо. Часа через полтора-два приехал замерщик, Павел, приятны молодой человек такой, показал образцы, проконсультировал по материалу. Все быстренько померил, посчитал, цена понравилась, помог определиться с выбором светильников, заключили договор. На следующий день приехали монтажники и установили все часов за шесть. У меня двушка. Очень понравилась оперативность и слаженностьв работе!
+					+e('').row
+						+e('').col
+							+e('').wrap
+								+e('').left
+									+e('img')(src="http://placehold.it/150x150").img
+								+e('').right
+									+e('').about-wrap
+										+e('span').about «У нас был ограничен бюджет...»
+									+e('span').name Юлия, Москва
+							+e('').text
+								p Купили не давно с мужем загородный дом, состояние было не очень, решили делать натяжные потолки - посоветовали друзья. Дали номер вашей компании, позвонили, замерщик приехал в тот же день и на месте провели расчет и договорились по цене. Работу выполнили очень быстро, мы результатом довольны!
+						+e('').col
+							+e('').wrap
+								+e('').left
+									+e('img')(src="http://placehold.it/150x150").img
+								+e('').right
+									+e('').about-wrap
+										+e('span').about «У нас был ограничен бюджет...»
+									+e('span').name Юлия, Москва
+							+e('').text
+								p Очень боялись за обои, дизайнерские обои очень дорогие, поэтому очень порадовало, что ребята работали перфораторами с пылесосом. Результатом очень довольны! Работа выше всяких похвал!
+				+e('').btn-wrap
+					+b('a')(href="#").btn Посмотреть еще отзывы
+		+b('section').sertificate
+			.b-container
+				+e('').title-wrap
+					div(class="test")
+						<span class="left"></span>
+						h2 Сертификаты
+						<span class="right"></span>
+				+e('').cols-wrap
+					+e('').col
+						+e('').wrap
+							+e('img')(src="http://placehold.it/160x200").img
+							+e('').layout
+					+e('').col
+						+e('').wrap
+							+e('img')(src="http://placehold.it/160x200").img
+							+e('').layout
+					+e('').col
+						+e('').wrap
+							+e('img')(src="http://placehold.it/160x200").img
+							+e('').layout
+					+e('').col
+						+e('').wrap
+							+e('img')(src="http://placehold.it/160x200").img
+							+e('').layout
+					+e('').col
+						+e('').wrap
+							+e('img')(src="http://placehold.it/160x200").img
+							+e('').layout
+		+b('section').our-work
+			.b-container
+				+e('').title-wrap
+					div(class="test")
+						<span class="left"></span>
+						h2(class="white") Как мы выполняем работу
+						<span class="right"></span>
+				+e('').cols-wrap
+					+e('').col
+						+e('span').key Вы звоните или<br><a href="#" class="b-order">оставляете заявку</a>
+						+e('span').value 8 (495) 722-53-24
+					+e('').col
+						+e('span').key Замер
+						+e('span').value К вам приедет наш замерщик, рассчитает стоимость и поможет определиться с выбором
+					+e('').col
+						+e('span').key Заключение<br>договора
+						+e('span').value Для Вашего удобства заключение договора сразу у Вас на объекте
+					+e('').wrap
+						+e('').col-a
+							+e('span').key Установка
+							+e('span').value Через 24 часа приезжает наша бригада монтажников и за 3 часа устанавливает потолок на Вашем объекте!
+						+e('').col-a
+							+e('span').key Производство
+							+e('span').value Мы изготавливаем потолок  по вашему заказу
+		+b('section').map
+			.b-container
+				+e('').title-wrap
+					div(class="test")
+						<span class="left"></span>
+						h2 Контакты
+						<span class="right"></span>
+				+e('').wrap-map
+					#map
+					+e('').layout
+						+e('').text-wrap
+							+e('span').key Адрес:
+							+e('span').value г. Москва, Киевское шоссе, Бизнес-Парк "РУМЯНЦЕВО", корпус "Г", офис 159Г
+							+e('span').key Время работы:
+							+e('span').value 09:00 - 23:00, без выходных
+							+e('span').key Телефон:
+							+e('span').value 8 (495) 722-53-24
+							+e('span').key E-mail:
+							+e('a')(href="#").value info@potolokmaster.pro
+		+b('section').more-question
+			.b-container
+				+e('').title-wrap
+					div(class="test")
+						<span class="left"></span>
+						h2(class="white") Остались дополнительные вопросы?
+						<span class="right"></span>
+				+e('').wrap
+					+e('').left
+						+b('a')(href="#").btn._small-size Задайте вопрос менеджеру
+					+e('').right
+						p или позвоните нам: 8 (495) 722-53-24
+
+		include partials/footer
+		include inc/vendor-scripts
+		script(src="js/client.min.js")

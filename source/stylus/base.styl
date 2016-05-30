@@ -1,0 +1,132 @@
+html
+	height 100%
+	font-size $rootFontSize, false
+
+body
+	font-family 'Open Sans', sans-serif
+	min-height 100%
+	position relative
+	-webkit-text-size-adjust 100%
+	-webkit-font-size-adjust 100%
+	@media $max_sm
+		width 992px
+
+img
+	display block
+
+h1, h2, h3, h4, h5
+	color #000
+	line-height 18px
+	font-weight 600
+	margin-bottom 10px
+
+h1
+	font-size 25px
+h2
+	font-size 22px
+h3
+	font-size 20px
+h4
+	font-size 18px
+h5
+	font-size 17px
+
+p
+	margin-bottom 20px
+	font-size 17px
+	line-height 20px
+	font-weight 100
+	&:last-child
+		margin-bottom 0
+
+ul, ol
+	margin-bottom 20px
+	li
+		line-height 20px
+		list-style-position inside
+
+i
+	font-style italic
+
+b, strong
+	font-weight 600
+
+button
+	border 0
+
+a
+	cursor pointer
+
+.-no-border, _no-border *
+	border 0
+
+.-img-left,
+.-img-right
+	margin-bottom 14px
+
+.-img-left
+	float left
+	margin-right 14px
+
+.-img-right
+	float right
+	margin-left 14px
+
+.-text-center
+	text-align center
+
+.-text
+	> p
+		&:last-child
+			margin-bottom 0
+
+.fancybox-skin
+	box-shadow none !important
+	border-radius 0
+
+.fancybox-wrap
+	opacity 0
+
+.owl-carousel .owl-item
+	-webkit-transform translateZ(0)
+
+.swiper-container
+	.swiper-prev, .swiper-next
+		vAlign()
+	.swiper-prev
+		left 0
+	.swiper-next
+		right 0
+
+.-hidden-lg
+	@media $max_lg
+		display none
+.-hidden-md
+	@media $max_md
+		display none
+.-hidden-sm
+	@media $max_sm
+		display none
+.-hidden-xs
+	@media $max_xs
+		display none
+
+.-visible-lg
+	display none
+	@media $max_lg
+		display block
+.-visible-md
+	@media $max_md
+		display block
+	@media $min_lg
+		display none
+.-visible-sm
+	@media $max_sm
+		display block
+	@media $min_md
+		display none
+.-visible-xs
+	@media $max_xs
+		display block
+	@media $max_sm
+		display none

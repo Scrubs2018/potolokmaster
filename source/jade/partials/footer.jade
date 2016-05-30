@@ -1,0 +1,31 @@
++b('footer').footer
+	.b-container
+		+e('').wrap
+			+e('').left
+				+e('span').item ИНН 502103124887, ОГРН 313507419900048
+				+e('a')(href="#").item._small Политика конфиденциальности
+			+e('').right
+				+e('span').title Мы в социальных сетях:
+				+e('a')(href="#").col._vk
+				+e('a')(href="#").col._insta
+
+.im-popups
+	.im-popup#link
+		.im-popup-inside
+			+b('form').popup
+				+e('').top
+					+e('a')(href="#").close
+					+e('span').title Получить маскировочную ленту в подарок
+					+e('').text
+						p Введите Ваши данные и мы с Вами свяжемся:
+				+e('').bottom
+					+e('').item
+						+b('').name
+							+e('input')(type="text" placeholder="Ваше имя").input
+							+e('input')(type="submit" value="").submit
+					+e('').item
+						+b('').name
+							+e('input')(type="text" placeholder="Ваш телефон").input
+							+e('input')(type="submit" value="").submit-a
+					+e('').btn-wrap
+						+b('input')(type="submit" value="Отправить заявку").btn._fix

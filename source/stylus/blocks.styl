@@ -1,0 +1,1220 @@
+.b-container
+	max-width 1040px
+	width 100%
+	margin 0 auto
+	position relative
+	height 100%
+	padding-left 40px
+	padding-right 40px
+
+.b-footer
+	position relative
+	width 100%
+	bottom 0
+	left 0
+	height 107px
+	&__wrap
+		font-size 0
+		padding-top 39px
+	&__left, &__right
+		display inline-block
+		vertical-align middle
+		width 50%
+		font-size $rootFontSize
+	&__item
+		display block
+		color #000
+		font-size 15px
+		font-weight 300
+		&_small
+			font-size 13px
+			display inline-block
+			&:hover
+				color #0EAEC1
+	&__right
+		text-align right
+	&__title
+		font-size 15px
+		font-weight 300
+		display inline-block
+		vertical-align middle
+	&__col
+		display inline-block
+		vertical-align middle
+		margin-left 10px
+		&_vk
+			sprite($s-q1)
+		&_insta
+			sprite($s-q2)
+		&:hover
+			opacity .8
+
+.b-header
+	position fixed
+	background-color #fff
+	width 100%
+	z-index 1000
+	&__wrap
+		width 100%
+		display table
+		padding-top 7px
+		padding-bottom 15px
+	&__left, &__middle, &__right
+		display table-cell
+		vertical-align middle
+	&__left
+		width 262px
+	&__right
+		width 240px
+		text-align right
+	&__middle
+		text-align center
+	&__number
+		font-size 29px
+		font-weight 100
+		display block
+	&__time-work
+		font-size 13px
+		font-weight 100
+		padding-top 5px
+		display block
+		padding-bottom 7px
+	&__order
+		font-size 15px
+		font-weight 100
+		display inline-block
+		text-decoration none
+		color #0EAEC1
+		border-bottom 1px dotted #0EAEC1
+		&:hover
+			color #000
+
+.b-menu
+	&__item
+		font-size 15px
+		color #000
+		text-decoration none
+		margin-left 5px
+		font-weight 100
+		margin-right 5px
+		border-bottom 1px dotted #000
+		&:hover
+			color #0EAEC1
+
+.b-top-main
+	background-image url(../img/bg.jpg)
+	background-position center 0
+	background-repeat no-repeat
+	padding-top 100px
+	width 100%
+	position relative
+	height 824px
+	&__title
+		font-size 48px
+		font-family 'Fregat'
+		text-transform uppercase
+		font-weight 600
+		padding-bottom 10px
+		display block
+	&__title-wrap
+		padding-bottom 31px
+	&__top
+		width 100%
+		display table
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__right
+		width 353px
+		padding-top 80px
+	&__left
+		padding-top 117px
+	&__cols-wrap
+		font-size 0
+	&__bottom
+		position absolute
+		bottom 0
+		width 100%
+		height 138px
+	&__wrap
+		position relative
+		height 100%
+	&__col
+		display inline-block
+		vertical-align middle
+		width 43%
+		font-size 18px
+		font-weight 100
+		font-size $rootFontSize
+		padding-left 85px
+		padding-right 10px
+		&_procent
+			font-size 19px
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				sprite($s-procent)
+				vAlign()
+		&_procent-a
+			font-size 19px
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				sprite($s-procent-a)
+				vAlign()
+
+.b-title
+	font-size 24px
+	font-weight 600
+	font-family 'Fregat'
+	span
+		color #0EAEC1
+		text-decoration none
+
+.b-application
+	background-color alpha(#fff, .9)
+	padding 30px 20px
+	text-align center
+	border-radius 6px
+	box-shadow 0 0 0 4px rgba(255,255,255,0.5)
+	&__title-wrap
+		line-height 24px
+		padding-bottom 5px
+	&__text
+		padding-bottom 20px
+		p
+			font-size 15px
+	&__item
+		margin 0 15px 10px
+	&__btn-wrap
+		padding 0 15px
+
+.b-name
+	position relative
+	&__search
+		margin 0 auto
+		position relative
+		width 100%
+		height 72px
+		padding 15px 20px 0
+		placeholder(#cbcbcb)
+		outline none
+	&__submit, &__submit-a
+		position absolute
+		border 0
+		left 10px
+		cursor text !important
+		outline none
+		background-color transparent
+		sprite($s-f1)
+		vAlign()
+	&__submit-a
+		sprite($s-f2)
+	&__input
+		outline none
+		font-size 18px
+		font-weight 100
+		line-height 51px
+		width 100%
+		padding 0 10px 0 37px
+		border-radius 4px
+		border 1px solid #dfdfdf
+		&_small
+			font-size 17px
+			line-height 41px
+
+.b-btn
+	line-height 51px
+	background-color #ffe301
+	display inline-block
+	padding 0 25px
+	border-radius 5px
+	border 0
+	border-bottom 3px solid #ffb401
+	font-size 20px
+	font-weight 100
+	text-align center
+	text-decoration none
+	color #000
+	&_fix
+		width 100%
+		padding 0
+	&_small
+		padding 0 20px
+		line-height 35px
+		font-size 15px
+	&_small-size
+		font-size 17px
+	&:hover
+		background-color #fff82d
+		border-color #ffc724
+
+.b-about
+	font-size 0
+	&__col
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width 20%
+		text-align center
+	&__top
+		display inline-block
+		color #0699AB
+		font-size 53px
+		font-family 'Fregat'
+		font-weight 600
+		padding-left 15px
+		&_one
+			position relative
+			&:after
+				content ''
+				position absolute
+				left -25px
+				vAlign()
+				sprite($s-one)
+		&_two
+			position relative
+			&:after
+				content ''
+				position absolute
+				left -20px
+				vAlign()
+				sprite($s-two)
+		&_three
+			position relative
+			&:after
+				content ''
+				position absolute
+				left -20px
+				vAlign()
+				sprite($s-three)
+		&_four
+			position relative
+			&:after
+				content ''
+				position absolute
+				left -20px
+				vAlign()
+				sprite($s-four)
+		&_five
+			position relative
+			&:after
+				content ''
+				position absolute
+				left -15px
+				vAlign()
+				sprite($s-five)
+	&__bottom
+		font-size 19px
+		font-weight 100
+		display block
+		padding 0 10px
+
+.b-present
+	padding 50px 0 55px
+	&__present-wrap
+		padding 0 50px
+		display table
+		width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		width 220px
+		margin-left 20px
+		padding-top 46px
+	&__img
+		border-radius 50%
+		box-shadow 0 0 39px -16px #000
+		margin-right -20px
+	&__img-a
+		max-width 100%
+		height auto
+	&__right
+		position relative
+		margin-left -20px
+	&__layout
+		text-align center
+		position absolute
+		width 100%
+		height 100%
+		top 60px
+		left 0
+	&__title
+		font-size 32px
+		font-family 'Fregat'
+		font-weight 600
+	&__wrap
+		padding 20px 50px 0
+		font-size 0
+	&__timer, &__btn-wrap
+		display inline-block
+		vertical-align middle
+		font-size $rootFontSize
+		width 50%
+	&__btn-wrap
+		padding-left 10px
+	&__timer
+		height 109px
+	&__img-b
+		width 100%
+		height auto
+
+.b-decision
+	background-image url(../img/bg2.jpg)
+	background-position center bottom 30px
+	background-repeat no-repeat
+	&__cols-wrap
+		font-size 0
+		padding-top 18px
+		margin-left -10px
+		margin-right -10px
+	&__col
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width (100/3)%
+		padding 0 10px 36px
+	&__title-wrap-w
+		padding-top 160px
+	&__wrap
+		padding 10px 40px 25px
+		display table
+		width 100%
+	&__left, &__right
+		display table-cell
+		vertical-align top
+		padding-left 40px
+	&__left
+		width 350px
+		padding-right 20px
+		position relative
+		&:after
+			content ''
+			position absolute
+			sprite($s-i1)
+			left 0
+			top 8px
+	&__right
+		position relative
+		&:after
+			content ''
+			position absolute
+			sprite($s-i2)
+			left 0
+			top 8px
+
+.b-text
+	font-size 19px
+	font-weight 100
+
+.b-made-solution
+	text-align center
+	&__img
+		width 100%
+		height auto
+		padding-bottom 10px
+	&__title
+		font-size 27px
+		font-family 'Fregat'
+		font-weight 600
+		padding-bottom 9px
+		display block
+		margin-bottom 12px
+		position relative
+		sup
+			font-size 23px
+		&:after
+			content ''
+			position absolute
+			background-color #0699ab
+			height 4px
+			width 50px
+			display block
+			hAlign()
+			border-radius 2px
+			bottom 0
+	&__price
+		font-size 19px
+		font-weight 100
+		padding-bottom 10px
+	&__btn-wrap
+		padding 0 40px
+
+.b-calc
+	background-color #faf9f6
+	padding 55px 30px
+	&__title-wrap
+		text-align center
+		padding-bottom 30px
+	&__cols-wrap
+		font-size 0
+		margin-left -10px
+		margin-right -10px
+		padding-bottom 15px
+	&__col
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width 25%
+		text-align center
+		padding-left 10px
+		padding-right 10px
+	&__key
+		font-size 16px
+		font-weight 100
+		padding-bottom 7px
+	&__item
+		padding-bottom 8px
+	&__btn-wrap
+		width 275px
+		margin 0 auto
+
+.b-select, .b-input
+	display block
+	width 100%
+	line-height 41px
+	outline none
+	font-size 17px
+	font-weight 100
+	padding 0 10px
+	border-radius 4px
+	border 1px solid #dfdfdf
+
+.b-select
+	border-color rgb(169, 169, 169)
+	font-size 15px
+	height 41px
+
+.b-title-middle
+	font-size 35px
+	font-family 'Fregat'
+	font-weight 600
+	span
+		color #0eaec1
+
+.b-texture
+	padding 45px 180px 36px 50px
+	&__title-wrap, &__text-a
+		display inline-block
+		vertical-align middle
+	&__text-a
+		padding-left 10px
+	&__top
+		padding-bottom 25px
+	&__wrap
+		font-size 0
+		padding-bottom 15px
+	&__left, &__right
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width 50%
+	&__right
+		padding-left 20px
+	&__cols-wrap
+		font-size 0
+	&__col
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width (100/3)%
+		text-align center
+	&__img
+		margin 0 auto
+		border-radius 50%
+		padding-bottom 5px
+	&__title
+		display block
+		font-size 17px
+		font-weight 100
+	&__text
+		font-size 13px
+		font-weight 100
+	&__many-text
+		width 560px
+		padding-bottom 50px
+
+.b-discount
+	&__row
+		padding-bottom 8px
+		&:last-child
+			padding-bottom 0
+	&__title
+		font-size 17px
+		font-weight 100
+		sup
+			font-size 14px
+		span
+			font-weight 600
+		&_white
+			color #fff
+
+.b-description
+	font-size 0
+	padding-right 60px
+	&_small
+		padding-right 0
+	&__col
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width 50%
+		font-size 19px
+		font-weight 100
+		padding-left 43px
+		padding-right 18px
+		margin-bottom 22px
+		span
+			font-size 13px
+		sup
+			font-size 11px
+		&_kinds1
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kinds1)
+		&_kinds2
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kinds2)
+		&_kinds3
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 2px
+				vAlign()
+				sprite($s-kinds3)
+		&_kinds4
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kinds4)
+		&_kinds5
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kinds5)
+		&_kinds6
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kinds6)
+		&_kind1
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kind1)
+		&_kind2
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 3px
+				vAlign()
+				sprite($s-kind2)
+		&_kind3
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kind3)
+		&_kind4
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kind4)
+		&_kind5
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kind5)
+		&_kind6
+			position relative
+			&:after
+				content ''
+				position absolute
+				left 0
+				vAlign()
+				sprite($s-kind6)
+
+.b-ceiling
+	background-image url(../img/bg3.jpg)
+	background-position center top 0
+	background-repeat no-repeat
+	padding 81px 0 0
+	&__wrap
+		padding-left 381px
+		padding-bottom 100px
+	&__cols-wrap
+		padding 35px 0
+	&__col
+		display inline-block
+		vertical-align top
+		padding-right 15px
+	&__img
+		border-radius 50%
+
+.b-timer
+	display table
+	padding 143px 30px 93px
+	width 100%
+	&__right
+		width 353px
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__title
+		font-size 44px
+		font-family 'Fregat'
+		font-weight 600
+		color #fff
+		display block
+	&__text
+		font-size 30px
+		display block
+		color #fff
+		font-family 'Fregat'
+		font-weight 600
+	&__left-a
+		display inline-block
+		vertical-align middle
+		sprite($s-procent-a)
+	&__right-a
+		padding-left 10px
+		display inline-block
+		vertical-align middle
+	&__middle
+		padding-top 15px
+		padding-bottom 18px
+	&__bottom
+		text-align right
+		padding-right 30px
+	&__img
+		max-width 100%
+		height auto
+		display inline-block
+
+.b-carusel
+	&__title-wrap
+		padding-bottom 5px
+	&__text
+		font-size 21px
+		font-weight 100
+		padding-bottom 35px
+
+.b-work
+	&__row
+		margin-bottom 35px
+	&__title-wrap
+		padding-top 10px
+		padding-bottom 30px
+
+.b-exemple
+	background-image url(../img/case.jpg)
+	background-repeat no-repeat
+	background-position center 0
+	display table
+	width 100%
+	padding 26px 0 40px
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__right
+		width 450px
+		padding-right 61px
+		padding-left 43px
+		padding-top 25px
+		li
+			font-size 16px
+			font-weight 100
+	&__left
+		padding-right 20px
+	&__row
+		font-size 0
+		padding-bottom 12px
+		&:last-child
+			padding-bottom 0
+	&__col
+		display inline-block
+		vertical-align top
+		width 50%
+		padding-right 10px
+		height 190px
+		&:last-child
+			padding-right 0
+	&__img
+		width 100%
+		height 100%
+	&__title
+		font-size 24px
+		font-weight 600
+		font-family 'Fregat'
+		line-height 28px
+		padding-bottom 20px
+		display block
+	&__text
+		font-size 19px
+		font-weight 100
+	&__office
+		padding-bottom 15px
+		p
+			margin 0
+	&__btn-wrap
+		width 200px
+
+.b-foto
+	&__row
+		padding-bottom 20px
+		margin-bottom 20px
+		margin-left -14px
+		margin-right -14px
+		font-size 0
+		&_border
+			border-bottom 1px solid #f0f0f0
+	&__left, &__right
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width 50%
+		padding-left 14px
+		padding-right 14px
+	&__cols-wrap
+		font-size 0
+		margin-left -3px
+		margin-right -3px
+	&__col
+		display inline-block
+		vertical-align top
+		width 50%
+		font-size $rootFontSize
+		padding-left 3px
+		padding-right 3px
+	&__img
+		width 100%
+		height auto
+		padding-bottom 13px
+	&__title
+		text-align center
+		display block
+		font-size 16px
+		font-weight 100
+	&__btn-wrap
+		text-align center
+
+.b-join-us
+	background-image url(../img/bg4.jpg)
+	background-position center top
+	background-repeat no-repeat
+	padding-top 120px
+	&__title-wrap
+		padding-bottom 75px
+	&__cols-wrap
+		font-size 0
+		padding 0 18px 90px
+	&__col
+		display inline-block
+		width 50%
+		vertical-align top
+		padding-bottom 30px
+	&__wrap
+		width 100%
+		display table
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__left
+		display block
+		&_join1
+			sprite($s-join1)
+		&_join2
+			sprite($s-join2)
+		&_join3
+			sprite($s-join3)
+		&_join4
+			sprite($s-join4)
+	&__right
+		padding-left 10px
+	&__title
+		font-size 24px
+		font-family 'Fregat'
+		color #fff
+		line-height 28px
+	&__text
+		p
+			font-size 19px
+			font-weight 100
+			color #fff
+			padding-right 30px
+
+.b-company
+	&__title
+		text-align center
+		font-size 20px
+		display block
+		font-family 'Fregat'
+		color #fff
+		padding-bottom 30px
+	&__cols-wrap
+		width 100%
+		display table
+	&__col
+		display table-cell
+		vertical-align middle
+		&_company1
+			sprite($s-company1)
+		&_company2
+			sprite($s-company2)
+		&_company3
+			sprite($s-company3)
+		&_company4
+			sprite($s-company4)
+		&_company5
+			sprite($s-company5)
+		&_company6
+			sprite($s-company6)
+		&_company7
+			sprite($s-company7)
+		&_company8
+			sprite($s-company8)
+		&_company9
+			sprite($s-company9)
+
+.b-reviews
+	&__row
+		width 100%
+		display table-row
+		min-height 100%
+		padding-bottom 27px
+	&__col
+		display table-cell
+		vertical-align top
+		width 50%
+		font-size $rootFontSize
+		border 6px solid #0fadc8
+		border-radius 10px
+		box-shadow 0 26px 41px -25px #000
+		height 100%
+	&__row-wrap
+		border-spacing 20px
+		display table
+		table-layout fixed
+		width 100%
+	&__title-wrap
+		padding-bottom 20px
+	&__btn-wrap
+		text-align center
+		padding 35px 0 40px
+	&__wrap
+		display table
+		border-spacing 0
+		width 100%
+		padding-top 30px
+		padding-bottom 30px
+	&__left, &__right
+		display table-cell
+		vertical-align top
+	&__img
+		border-radius 50%
+		margin 0 auto
+	&__left
+		width 200px
+	&__right
+		background-color #0fadc8
+		border-radius 10px 0 0 10px
+	&__name
+		display block
+		padding-left 20px
+		font-size 21px
+		color #fff
+		font-weight 300
+		font-style italic
+	&__about-wrap
+		height 110px
+		width 100%
+		padding 0 20px
+		v-out()
+	&__text
+		padding 0 20px 20px
+	&__about
+		v-in()
+		font-size 21px
+		color #fff
+		font-weight 300
+		font-style italic
+		letter-spacing 1px
+
+.b-sertificate
+	&__cols-wrap
+		font-size 0
+		padding-top 28px
+	&__col
+		display inline-block
+		vertical-align top
+		width 20%
+		padding-left 10px
+		padding-right 10px
+	&__wrap
+		position relative
+	&__img
+		width 100%
+		height auto
+		box-shadow 4px 4px 10px -4px #000
+		border 4px solid #000
+	&__layout
+		width 100%
+		height 100%
+		position absolute
+		top 0
+		left 0
+		&:hover
+			background-color alpha(#fff, .3)
+
+.b-slider
+	background-color gray
+	border 6px solid #fff
+	border-radius 20px
+	height 205px
+	v-out()
+	position relative
+	&__img
+		max-width 100%
+		height auto
+	.owl-item img
+		max-width 100%
+		width auto
+		margin 0 auto
+	.owl-stage-outer
+		v-in()
+	.owl-nav
+		position relative
+		top 0
+		text-align center
+		width 100%
+		// .owl-dots
+		// 	margin-right 10px
+		// 	position absolute
+		// 	display block
+		// 	height 100px
+		// 	zoom 1
+		// 	border-radius 50%
+		// 	.owl-dot
+		// 		width 12px
+		// 		height 12px
+		// 		border-radius 50%
+		// 		display block
+		// 		background-color #c8c5c5
+		// 		&:hover
+		// 			background-color #f00
+		// 	.owl-dot .active
+		// 		background-color #f00
+		.owl-prev
+			display block
+			sprite($s-nav-l)
+			position absolute
+			bottom 65px
+			left -35px
+		.owl-next
+			display block
+			sprite($s-nav-r)
+			position absolute
+			bottom 65px
+			right -35px
+			font-size 0
+
+.b-our-work
+	background-image url(../img/bg6.jpg)
+	background-position center 0
+	background-repeat no-repeat
+	padding-top 121px
+	min-height 772px
+	&__title-wrap
+		padding-bottom 151px
+	&__key
+		font-size 24px
+		color #fff
+		font-family 'Fregat'
+	&__cols-wrap
+		font-size 0
+	&__col
+		display inline-block
+		vertical-align top
+		font-size $rootFontSize
+		width (100/3)%
+	&__key
+		text-align center
+		display block
+	&__value
+		font-size 17px
+		padding 0 27px
+		color #fff
+		font-weight 300
+		text-align center
+		display block
+	&__wrap
+		padding 172px 180px 0
+		font-size 0
+	&__col-a
+		display inline-block
+		vertical-align top
+		width 50%
+		font-size $rootFontSize
+
+.b-order
+	text-decoration none
+	color #fff
+	border-bottom 2px dotted #fff
+	&:hover
+		color #0EAEC1
+		border-color #0EAEC1
+
+.b-map
+	&__title-wrap
+		padding 50px 0 30px
+	&__wrap-map
+		height 400px
+		position relative
+	&__layout
+		position absolute
+		width 43%
+		background-image url(../img/tag.png)
+		background-position center left 0
+		background-repeat no-repeat
+		background-size cover
+		height 100%
+		top 0
+		right 0
+	&__text-wrap
+		padding-left 135px
+		padding-top 40px
+	&__key
+		display block
+		font-size 24px
+		color #fff
+		font-family 'Fregat'
+		padding-bottom 5px
+	&__value
+		display block
+		font-size 17px
+		text-decoration none
+		color #fff
+		font-weight 300
+		line-height 20px
+		padding-bottom 20px
+
+#map
+	background-color #B9B4B4
+	height 400px
+
+.b-more-question
+	background-image url(../img/bg7.jpg)
+	background-repeat no-repeat
+	background-position center 0
+	padding-top 130px
+	min-height 293px
+	&__wrap
+		padding 0 140px
+		width 100%
+		display table
+	&__left, &__right
+		display table-cell
+		vertical-align middle
+	&__right
+		p
+			font-size 21px
+			font-weight 300
+			color #fff
+
+.test
+	width 960px
+	line-height 45px
+	text-align center
+	position relative
+	padding 0 20px
+	margin 0 10px
+.test h2
+	font-size 43px
+	font-family 'Fregat'
+	line-height 52px
+	display inline-block
+.test h2.white
+	color #fff
+.test .left
+	content ''
+	display block
+	position absolute
+	width 50%
+	height 2px
+	top 25px
+	left 0px
+	background #0699ab
+.test .right
+	content ''
+	display block
+	position absolute
+	width 50%
+	height 2px
+	top 25px
+	right 0px
+	background #0699ab
+
+.b-popup
+	max-width 420px
+	padding 45px 35px
+	background-color #fff
+	position relative
+	border-radius 5px
+	&__title
+		font-size 28px
+		line-height 26px
+		font-weight 300
+		padding-bottom 10px
+		display block
+	&__close
+		position absolute
+		top -35px
+		right -35px
+		sprite($s-close)
+		display block
+		&:hover
+			opacity .8
+	&__text
+		padding-bottom 15px
+		p
+			font-size 15px
+	&__item
+		padding-bottom 10px
+	&__bottom
+		padding 0 50px
